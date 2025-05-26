@@ -2,7 +2,7 @@
 This repository contains the code and documentation for a Google Colab lab assignment implementing YOLOv11 for real-time object detection using the Rock-Paper-Scissors dataset. The project covers environment setup, dataset acquisition and preprocessing via Roboflow, model training, inference, and performance evaluation.
 
 ## 📌 Overview
-This assignment focuses on implementing and evaluating a YOLOv11 model for object detection. The project is executed on Google Colab, where the required libraries (Roboflow, Ultralytics, PyTorch, OpenCV, etc.) are installed. The Rock-Paper-Scissors dataset is acquired via Roboflow, preprocessed, and then used to train a YOLOv11 model. Finally, the trained model is tested on unseen data, and its performance is evaluated using metrics such as Mean Average Precision (mAP), Precision, Recall, and F1 Score.
+This assignment focuses on implementing and evaluating a YOLOv11 model for Drowsiness detection. The project is executed on Google Colab, where the required libraries (Roboflow, Ultralytics, PyTorch, OpenCV, etc.) are installed. The Rock-Paper-Scissors dataset is acquired via Roboflow, preprocessed, and then used to train a YOLOv11 model. Finally, the trained model is tested on unseen data, and its performance is evaluated using metrics such as Mean Average Precision (mAP), Precision, Recall, and F1 Score.
 
 ## 📂 Dataset
 ### Dataset Acquisition
@@ -12,10 +12,11 @@ This assignment focuses on implementing and evaluating a YOLOv11 model for objec
   - Example:
     ```python
     !pip install roboflow
+    
     from roboflow import Roboflow
     rf = Roboflow(api_key="jBRsMtfCa6QP67xjDuwU")
-    project = rf.workspace("roboflow-58fyf").project("rock-paper-scissors")
-    version = project.version(14)
+    project = rf.workspace("godstime-olukaejor-ys11d").project("drowsiness-detection-w65rx")
+    version = project.version(2)
     dataset = version.download("yolov11")
     ```
 
